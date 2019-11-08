@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+font-family: Arial;
+
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Navbar container */
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="header">
+  <h1>Modified Board Game - Battleship</h1>
+  <p>Brian Mikolajczyk</p>
+</div>
+
+
+
+<div class="navbar">
+
+
+<div class="dropdown">
+<button class="dropbtn">dev.log
+<i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-content">
+<a href="../../devlogs//magenta/magenta.html">Magenta</a>
+<a href="../../devlogs/red/red.html">Red</a>
+<a href="../../devlogs/orange/orange.html">Orange</a>
+<a href="../../devlogs/yellow/yellow.html">Yellow</a>
+<a href="../../devlogs/green/green.html">Green</a>
+<a href="../../devlogs//teal/teal.html">Teal</a>
+<a href="../../devlogs/blue/blue.html">Blue</a>
+<a href="../../devlogs/indigo/indigo.html">Indigo</a>
+<a href="../../devlogs/violet/violet.html">Violet</a>
+<a href="../../devlogs/bronze/bronze.html">Bronze</a>
+<a href="../../devlogs/silver/silver.html">Silver</a>
+<a href="../../devlogs/gold/gold.html">Gold</a>
+</div>
+</div>
+
+
+
+<div class="dropdown">
+<button class="dropbtn">Projects
+<i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-content">
+<a href="../../../DIG 4713/Projects/Website/home2.html">Game Design 1: Physical Prototype of Digital Game</a>
+<a href="../../../DIG 4713/Projects/Card_Game/Card_Game.html">Game Design 2: Card Game</a>
+<a href="#">Game Design 3: Modified Board Game</a>
+
+
+</div>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+<div class="row" style="">
+<div class="leftcolumn">
+	
+	<div class="card">
+	  <h2>Modified Battleship (NAVAL WAR)</h2>
+      	<p>
+		So we decided to modify Battleship. We saw that Battleship had some pretty big flaws to the original game. Flaws such as the lack of defensive capabilities, variety of attack options, and movement capabilities. We decided to focus on these flaws and add them to the game. Firstly, we felt that the attacks could have been a bit more creative in the original game. So, with that we add different attack option in the game. The player can attack on a cell by cell basis as in the original game, however the player is now also given the highly recommended option of drawing and assault card. These cards focus on the offensive side of Battleship and offer the play a variety of attacks. Attacks such as Airstrikes, Drone Strikes, Task Force attacks and more. Some of these attacks focuses on a single cell while others target a whole column of cells. We felt that this would make the game more interesting and fun.<br><br>
+			However, to counter the OP offensive we had to create a stronger deffensive. Traditionally Battleship uses the unknown or "Fog of War" as the deffense. To us, that wasn't good enough. Battleship lacks redemption from ship attacks and discovery. So we created a larger board, add a new ship, and created movement and intel cards. The new game board is roughly 50% larger than the original. The new ship is called the Flag Ship (If the flag ship is sunk than the game is over.) Intel cards such as Smokescreens which creates non-combat zones and Engineering which regenerates health to ships allows the player to redeem themselves and tips the scales of the game. Movement cards amplifies the "Fog of War" effect in the game. My personal favorite of the movement cards is the Fleet Relocation card. This card allows the player to reposition all of their standing ships.
+			<br><br>
+			
+		</p>
+
+    </div>
+
+	
+	
+	<div class="card">
+	
+		<h2><a href="project3rules-final.pdf">Downloadable Rules Sheet</a></h2>
+	
+	</div>
+	
+	<div class="card">
+	
+		<h2><a href="MDA.pdf">MDA Analysis</a></h2>
+	
+	</div>
+	
+	<div class="card">
+	
+		<h2><a href="project3rules-final.pdf">Modified Battleship Rules</a></h2>
+	
+	</div>
+	
+	<div class="card">
+	
+		<h2><a href="Battleship.pdf">Original Battleship Rules</a></h2>
+	
+	</div>
+	
+</div>
+	
+	
+
+
+
+  <div class="rightcolumn">
+    <div class="card">
+      <p style="text-align: center"><a href="https://youtu.be/ai_urOcOdZY">Modified Playtest Video</a></p>
+    </div>
+	  
+	<div class="card">
+      <p style="text-align: center"><a href="https://youtu.be/q0qpQ8doUp8">Playtest of Original<br>
+	  (All credit goes to "Triple S Games", not my original video)</a></p>
+    </div>  
+	  
+    <div class="card">
+      <h3>Pictures</h3>
+		<div class="fakeimg"><p><img src="bs1.jpg" height="200" width="266"></p></div>
+		<div class="fakeimg"><p><img src="bs2.jpg" height="200" width="266"></p></div>
+		<div class="fakeimg"><p><img src="bs3.jpg" height="200" width="266"></p></div>
+		<div class="fakeimg"><p><img src="bs4.jpg" height="200" width="266"></p></div>
+		<div class="fakeimg"><p><img src="bs5.jpg" height="200" width="266"></p></div>
+
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+	<h2>End of Modified Board Game - Battleship</h2>
+</div>
+
+
+
+</body>
+</html>
